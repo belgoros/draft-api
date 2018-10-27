@@ -20,7 +20,7 @@ class PostsController < ApplicationController
     if @post.save
       render json: @post, status: :created, location: @post
     else
-      render json: @post.errors, status: :unprocessable_entity
+      respond_with_errors(@post)
     end
   end
 
