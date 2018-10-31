@@ -20,7 +20,7 @@ class PostsController < ApplicationController
     if @post.save
       render json: @post, status: :created, location: @post
     else
-      respond_with_errors(@post)
+      respond_with_errors @post
     end
   end
 
@@ -29,7 +29,7 @@ class PostsController < ApplicationController
     if @post.update(post_params)
       render json: @post
     else
-      respond_with_errors(@post)
+      respond_with_errors @post
     end
   end
 
