@@ -4,6 +4,6 @@ class PostSerializer < ActiveModel::Serializer
   attributes :id, :title, :body, :tag_ids, :archived, :photo
 
   def photo
-    url_for(object.photo) if object.photo.attached?
+    Rails.application.routes.url_helpers.rails_blob_path(object.photo, only_path: true) if object.photo.attached?
   end
 end
