@@ -27,6 +27,7 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   def update
     if @post.update(post_params)
+      @post.photo.attach(post_params[:photo])
       render json: @post
     else
       respond_with_errors @post
@@ -47,6 +48,6 @@ class PostsController < ApplicationController
     # Only allow a trusted parameter "white list" through.
     def post_params
       ActiveModelSerializers::Deserialization.jsonapi_parse!(params,
-        only: [:title, :body, :tag_ids, :archived])
+        only: [:title, :body, :tag_ids, :archived, :photo])
     end
 end
