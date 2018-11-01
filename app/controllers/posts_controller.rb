@@ -4,6 +4,7 @@ class PostsController < ApplicationController
   # GET /posts
   def index
     @posts = Post.all
+    # use Post.with_attached_photo.where(active: true) to avoid N+1 queries
 
     render json: @posts
   end
