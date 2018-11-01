@@ -11,6 +11,7 @@ gem 'sqlite3'
 gem 'puma', '~> 3.11'
 gem 'active_model_serializers',   '~> 0.10.6'
 gem 'rack-cors'
+gem 'mini_magick'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
