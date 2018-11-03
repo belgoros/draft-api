@@ -6,6 +6,6 @@ class PostSerializer < ActiveModel::Serializer
   def photo
     #variant = object.photo.variant(resize: "100x100")
     #rails_representation_url(variant, only_path: true)
-    rails_blob_url(object.photo)
+    rails_blob_url(object.photo) if object.photo.attached?
   end
 end
