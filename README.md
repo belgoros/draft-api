@@ -1,4 +1,4 @@
-# README
+# Rails API application
 
 This is a simple CRUD Rails API application using `active-model-serializer`.
 
@@ -15,4 +15,4 @@ This is a simple CRUD Rails API application using `active-model-serializer`.
 
 ### Deployment
 
-The API is deployed to Heoku free stack.
+The API is deployed to Heroku free stack.
