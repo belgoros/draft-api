@@ -28,7 +28,6 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   def update
     if @post.update(post_params)
-      @post.photo.attach(post_params[:photo])
       render json: @post
     else
       respond_with_errors @post
