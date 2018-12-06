@@ -10,6 +10,7 @@ gem 'active_model_serializers',   '~> 0.10.6'
 gem 'rack-cors'
 gem 'mini_magick'
 gem 'figaro'
+gem 'rswag'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
