@@ -4,7 +4,7 @@ This is a simple CRUD Rails API application using `active-model-serializer`.
 
 ### Available features
 
-- CRUD operations for a siple `Post` model
+- CRUD operations for a simple `Post` model
 - file uploads with ActiveStorage to AWS S3
 
 
