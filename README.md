@@ -7,6 +7,10 @@ This is a simple CRUD Rails API application using `active-model-serializer`.
 - CRUD operations for a simple `Post` model
 - file uploads with ActiveStorage to AWS S3
 
+### Setup
+
+- install dependencies by running `bundle`
+- run `rails db:setup` to run the migrations and populate with some Posts data (see `seeds.rb`) file.
 
 ### Used gems
 
