@@ -6,12 +6,12 @@ class PostsController < ApplicationController
     @posts = Post.all
     # use Post.with_attached_photo.where(active: true) to avoid N+1 queries
 
-    render json: @posts
+    render jsonapi: @posts
   end
 
   # GET /posts/1
   def show
-    render json: @post
+    render jsonapi: @post
   end
 
   # POST /posts
@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
 
     if @post.save
-      render json: @post, status: :created, location: @post
+      render jsonapi: @post, status: :created, location: @post
     else
       respond_with_errors @post
     end
@@ -28,7 +28,7 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   def update
     if @post.update(post_params)
-      render json: @post
+      render jsonapi: @post
     else
       respond_with_errors @post
     end
