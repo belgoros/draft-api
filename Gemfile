@@ -19,6 +19,10 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 5.0', '>= 5.0.1'
 end
 
+group :test do
+  gem 'database_cleaner',  '~> 1.6.2'
+end
+
 group :development do
   gem 'listen'#, '>= 3.0.5', '< 3.2'
   gem 'spring'
