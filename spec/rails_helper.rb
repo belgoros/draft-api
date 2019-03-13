@@ -61,7 +61,7 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
-  
+
   #DatabaseCleaner settings
   config.before(:suite) do
     DatabaseCleaner.strategy = :truncation
@@ -75,4 +75,7 @@ RSpec.configure do |config|
   config.after(:each) do
     DatabaseCleaner.clean
   end
+
+  # rspec-rails-swagger settings
+  config.backtrace_inclusion_patterns = [%r{app|spec}]
 end
