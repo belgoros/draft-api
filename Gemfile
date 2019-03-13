@@ -22,6 +22,7 @@ end
 
 group :test do
   gem 'database_cleaner',  '~> 1.6.2'
+  gem 'rspec-rails-swagger', '~> 0.1.5'
 end
 
 group :development do
