@@ -1,0 +1,22 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "API V1",
+    "version": "v1"
+  },
+  "paths": {
+    "/posts": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Return all the available posts"
+          }
+        },
+        "tags": [
+          "posts"
+        ],
+        "summary": "list posts"
+      }
+    }
+  }
+}
