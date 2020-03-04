@@ -7,7 +7,7 @@ gem 'active_model_serializers', '~> 0.10.6'
 gem 'bootsnap',                 '>= 1.1.0', require: false
 gem 'figaro'
 gem 'mini_magick'
-gem 'puma',                     '~> 4.3', '>= 4.3.1'
+gem 'puma',                     '~> 4.3'
 gem 'rack-cors'
 gem 'rails',                    '~> 5.2.0'
 
